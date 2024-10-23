@@ -1,0 +1,170 @@
+*{
+  padding: 0;
+  margin: 0;
+  /* height: fit-content;
+  width: fit-content; */
+}
+
+
+.Home{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .logo-2{
+    height: 90px;
+    width: 150px;
+    top: 80px;
+    left: 110px;
+    position: absolute;
+
+
+    animation: App-logo-spin infinite 3s linear;
+  }
+ 
+  @keyframes App-logo-spin {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.05);
+    }
+  }
+  .Home-section{
+    background-image: url('../image/SearchExplore2.jpg');
+    /* https://static.vecteezy.com/system/resources/previews/025/934/704/large_2x/abstract-neon-light-gaming-background-generated-by-ai-free-photo.jpg */
+    /* https://img.freepik.com/premium-photo/businessman-showing-vr-virtual-reality-glasses-metaverse-sports-game-3d-cyberspace_24070-1579.jpg */
+    /* https://img.freepik.com/free-vector/gradient-cyber-futuristic-background_23-2149117429.jpg?t=st=1708498155~exp=1708501755~hmac=a40f4f37af222dd58679ecdbf40df4eb5fabf7797c56c93d022eed56c2a15b38&w=740 */
+    /* https://wallpapercave.com/uwp/uwp4263999.png */
+    /* https://img.freepik.com/free-vector/futuristic-networking-technology-background-vector-purple-tone_53876-110876.jpg?t=st=1708498223~exp=1708501823~hmac=e2dea6c9ddcfb4838b2b3df2841a48c249190e6a1302bfadac83aa33f5cc3573&w=740 */
+    /* https://wallpapercave.com/uwp/uwp4264011.png */
+    /* https://static.vecteezy.com/system/resources/previews/022/700/313/large_2x/generative-ai-illustration-of-gaming-background-abstract-cyberpunk-style-of-gamer-wallpaper-neon-glow-light-of-scifi-fluorescent-sticks-digitally-generated-image-photo.jpeg */
+    /**/
+    background-size:cover;
+    background-position:center center;
+    background-attachment:scroll;
+    height:800px;
+    width: auto;
+  }
+
+  .mainpage{
+    padding-top: 50px;
+    align-items: right;
+    padding-left: 7.5%;
+ 
+   }
+ 
+   .mainpage p{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    margin: 10px 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 35em;
+    animation: type 4s steps(60, end) infinite;
+  }
+ 
+  @keyframes type{
+    from { width: 0; }
+  }
+ 
+ 
+  .mainpage h1{
+    width: fit-content;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+  }
+  .mainpage h2{
+    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 33px;
+    font-style: bold;
+  }
+ 
+  .mainpage p:hover,.mainpage h1:hover{
+    cursor: pointer;
+    color: #ffff;
+}
+
+.getbutton{
+  margin-left: 10%;
+}
+.getstarted{
+  border: none;
+  width: 20%;
+  background: linear-gradient(to left, #6f3ccf, #48fdfc);
+  color: #010000;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+.getstarted:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.45);
+}
+
+.getstarted:active {
+  transform: translateY(2px);
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+
+.feed-btn{
+  position: relative;
+  top: -50%;
+  left: 85%;
+  z-index: 2;
+}
+
+.feedback-btn{
+  border: none;
+  top: 0%;
+  width: 10%;
+  background: linear-gradient(to left, #6f3ccf, #48fdfc);
+  color: #010000;
+  padding: 10px 10px;
+  border-radius: 10px;
+  font-size: 18px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  text-align: center;
+  }
+
+
+  @media only screen and (min-width: 481px) and (max-width: 800px) {
+    .logo-2{
+      top: 80px;
+      left: 50px;
+    }
+
+    .mainpage h1{
+      font-size: 36px;
+    }
+    .break-word {
+      display: block; 
+      width: 100%; 
+    }
+    .feedback-btn{
+      width: fit-content;
+    }
+    .feed-btn{
+      position: relative;
+      top: -60%;
+      left: 80%;
+      z-index: 2;
+    }
+    .mainpage p{
+      font-size: 24px;
+      margin: 10px 0 0 10px;
+      width: 30em;
+    }
+  }

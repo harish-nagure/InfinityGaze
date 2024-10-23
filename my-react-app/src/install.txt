@@ -1,0 +1,10 @@
+pip install flask
+npm install axios
+pip install flask_cors
+pip install opencv-python
+pip install cvzone
+pip install mediapipe
+
+
+npm install -g nodemon
+
